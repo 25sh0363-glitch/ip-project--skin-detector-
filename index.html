@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skin Disease Detector — Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Skin Disease Detector — Demo</h1>
+    <div class="muted small">Client-side demo only. No images are uploaded or stored.</div>
+
+    <div class="controls-row">
+      <input id="fileInput" type="file" accept="image/*" />
+      <div class="controls">
+        <button id="analyzeBtn" class="primary">Analyze</button>
+        <button id="reanalyzeBtn">Reanalyze (clear)</button>
+        <button id="sampleBtn">Load Sample</button>
+      </div>
+    </div>
+
+    <img id="preview" alt="Image preview" />
+
+    <section id="result" hidden>
+      <div class="label" id="predLabel"></div>
+      <div id="predDesc" class="muted"></div>
+      <div class="doctor">
+        <strong>Recommended specialist</strong>
+        <div id="doctorRec" class="muted"></div>
+      </div>
+    </section>
+
+    <div class="note">Demo only. This is not medical advice or a diagnosis.</div>
+  </main>
+
+  <footer>Open this file in your browser to run the demo.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
